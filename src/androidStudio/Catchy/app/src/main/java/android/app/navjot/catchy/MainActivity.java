@@ -11,16 +11,16 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
 
+    //declaring buttons
+    Button callButton;
+    Button locationButton;
+    Button grosseryButton;
+    Button cameraButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //declaring buttons
-        Button callButton;
-        Button locationButton;
-        Button grosseryButton;
-        Button cameraButton;
 
         //setting connection using find view by id which helps us connect code with layout elements by their id's
         callButton = (Button) findViewById(R.id.callButton);
