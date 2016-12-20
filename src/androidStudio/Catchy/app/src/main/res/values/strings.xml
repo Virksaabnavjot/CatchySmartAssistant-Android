@@ -8,4 +8,7 @@
     <string name="enterPhoneNo">Enter Phone Number</string>
     <string name="numberStart">08</string>
     <string name="makeCall">Call Number</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="here">here</string>
 </resources>

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity{
     //declaring buttons
     Button callButton;
     Button locationButton;
-    Button grosseryButton;
+    Button grossaryButton;
     Button cameraButton;
 
     @Override
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity{
         //setting connection using find view by id which helps us connect code with layout elements by their id's
         callButton = (Button) findViewById(R.id.callButton);
         locationButton = (Button) findViewById(R.id.locationButton);
-        grosseryButton = (Button) findViewById(R.id.grossaryButton);
+        grossaryButton = (Button) findViewById(R.id.grossaryButton);
         cameraButton = (Button) findViewById(R.id.cameraButton);
 
         callButton.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +38,24 @@ public class MainActivity extends AppCompatActivity{
                 startTelephonyActivityIntent.putExtra("welcomeMessage","Welcome to Telephony Activity");
                 startTelephonyActivityIntent.putExtra("callToActionMessage", "You can make a call from here");
                 startActivity(startTelephonyActivityIntent);
+            }
+        });
+
+        locationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Location Button Pressed", Toast.LENGTH_SHORT).show();
+                Intent startMyLocationActivityIntent = new Intent(getApplicationContext(), MyLocationActivity.class);
+                startActivity(startMyLocationActivityIntent);
+            }
+        });
+
+        grossaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Gallery Button Pressed", Toast.LENGTH_SHORT).show();
+                Intent startGrossaryActivityIntent = new Intent(getApplicationContext(), MyLocationActivity.class);
+                startActivity(startGrossaryActivityIntent);
             }
         });
     }
