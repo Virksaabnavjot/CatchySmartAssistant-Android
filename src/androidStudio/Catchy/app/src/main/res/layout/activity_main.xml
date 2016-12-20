@@ -68,7 +68,7 @@
             android:text="@string/location"
             android:layout_width="wrap_content"
             android:layout_height="73dp"
-            android:id="@+id/button7"
+            android:id="@+id/locationButton"
             android:layout_weight="1"
             android:background="@color/green"
             android:textSize="24sp" />
