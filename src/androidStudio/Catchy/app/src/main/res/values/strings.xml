@@ -5,4 +5,7 @@
     <string name="location">My Location</string>
     <string name="camera">Camera Take a Photo</string>
     <string name="groseryList">Grossary List</string>
+    <string name="enterPhoneNo">Enter Phone Number</string>
+    <string name="numberStart">08</string>
+    <string name="makeCall">Call Number</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_telephony"
     android:layout_width="match_parent"
@@ -8,6 +9,70 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/sky_blue"
     tools:context="android.app.navjot.catchy.TelephonyActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/callicon"
+        android:id="@+id/imageView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView">
+
+        <TextView
+            android:text="@string/enterPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/enterPhoneNo"
+            android:textSize="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/enterNumber"
+            android:layout_weight="0.06"
+            android:hint="enter here"
+            android:textSize="30sp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@+id/enterPhoneNo"
+            android:layout_toRightOf="@+id/numberStart"
+            android:layout_toEndOf="@+id/numberStart"
+            android:layout_marginLeft="76dp"
+            android:layout_marginStart="76dp" />
+
+        <TextView
+            android:text="@string/numberStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberStart"
+            android:textSize="30sp"
+            android:layout_alignTop="@+id/enterNumber"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/enterNumber" />
+
+        <Button
+            android:text="@string/makeCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/callPhoneButton"
+            android:textSize="30sp"
+            android:background="@color/green"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp" />
+
+    </RelativeLayout>
 </RelativeLayout>
