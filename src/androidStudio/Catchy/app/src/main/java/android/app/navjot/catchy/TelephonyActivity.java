@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -45,26 +46,28 @@ public class TelephonyActivity extends AppCompatActivity {
                     return;
                 }else {
                     String phoneNumber = enterNumber.getText().toString();
-
-                    //This bit below is done with the help of this tutorial
-                    //https://www.tutorialspoint.com/android/android_phone_calls.htm
-                    //Implicit Intent
-                    Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:03538"+phoneNumber));
-
-                    if (ActivityCompat.checkSelfPermission(TelephonyActivity.this,
-                            Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                        Toast.makeText(getApplicationContext(), "Permission Denied", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-                    startActivity(callIntent);
-
+                    //call the method to make a call
+                    onCall(phoneNumber);
 
                 }
-
-
             }
         });
 
+    }
+
+    //This function was done with the help of this discussion
+    //http://stackoverflow.com/questions/36990098/intent-call-action-doesnt-works-on-marshmallow
+    public void onCall(String phoneNumber) {
+        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+
+        //checking if the permission is not granted
+        if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    this,
+                    new String[]{Manifest.permission.CALL_PHONE},
+                    123);
+        } else {
+            startActivity(new Intent(Intent.ACTION_CALL).setData(Uri.parse("tel:03538"+phoneNumber)));
+        }
     }
 }
