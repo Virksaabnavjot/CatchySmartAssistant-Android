@@ -83,7 +83,7 @@
             android:text="@string/groseryList"
             android:layout_width="wrap_content"
             android:layout_height="73dp"
-            android:id="@+id/grossaryButton"
+            android:id="@+id/groceryButton"
             android:layout_weight="1"
             android:background="@color/colorAccent"
             android:textSize="24sp" />

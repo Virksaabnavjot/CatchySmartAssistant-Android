@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".TelephonyActivity" />
         <activity android:name=".MyLocationActivity" />
-        <activity android:name=".GrossaryActivity"></activity>
+        <activity android:name=".GroceryActivity"></activity>
     </application>
 
 </manifest>
