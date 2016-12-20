@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Catchy</string>
+    <string name="tagline">Your Personal Assistant</string>
+    <string name="call">Make a Call</string>
+    <string name="location">My Location</string>
+    <string name="camera">Camera Take a Photo</string>
+    <string name="groseryList">Grossary List</string>
 </resources>
