@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+/**
+ *
+ * @Author: Navjot Singh Virk
+ * Student Number: x13112406
+ */
 
 public class MainActivity extends AppCompatActivity{
 
@@ -58,5 +63,15 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(startGroceryActivityIntent);
             }
         });
+
+        cameraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Camera Button Pressed", Toast.LENGTH_SHORT).show();
+                Intent startMyCameraActivityIntent = new Intent(getApplicationContext(), MyCameraActivity.class);
+                startActivity(startMyCameraActivityIntent);
+            }
+        });
+
     }
 }

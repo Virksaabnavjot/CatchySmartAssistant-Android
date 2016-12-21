@@ -67,7 +67,7 @@ public class TelephonyActivity extends AppCompatActivity {
                     new String[]{Manifest.permission.CALL_PHONE},
                     123);
         } else {
-            startActivity(new Intent(Intent.ACTION_CALL).setData(Uri.parse("tel:03538"+phoneNumber)));
+            startActivity(new Intent(Intent.ACTION_CALL).setData(Uri.parse("tel:003538"+phoneNumber)));
         }
     }
 }
