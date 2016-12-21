@@ -8,6 +8,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -15,6 +17,7 @@ import android.widget.Toast;
 public class MyCameraActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private ImageView displayImageView;
+    Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,10 @@ public class MyCameraActivity extends AppCompatActivity {
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Adding a bit of fade-in animation to an imageview
+                animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade);
+                displayImageView.startAnimation(animation);
+
                 dispatchTakePictureIntent();
             }
         });
