@@ -32,6 +32,7 @@ public class MyCameraActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Adding a bit of fade-in animation to an imageview
+                //Using FadeAnimationExample available on moodle
                 animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade);
                 displayImageView.startAnimation(animation);
 

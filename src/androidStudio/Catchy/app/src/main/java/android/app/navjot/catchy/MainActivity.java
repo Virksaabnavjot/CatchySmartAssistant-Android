@@ -12,6 +12,9 @@ import android.widget.Toast;
  *
  * @Author: Navjot Singh Virk
  * Student Number: x13112406
+ * I acknowledge its my own work.
+ * The application may contain code snippets from the examples available on moodle
+ * and all the external source used in the development are referenced with care.
  */
 
 public class MainActivity extends AppCompatActivity{
