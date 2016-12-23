@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@color/colorAccent">
+
+    <ListView android:layout_width="fill_parent"
+    android:layout_height="321dp"
+    android:id="@+id/groceryListView"
+    android:divider="#595559"
+    android:dividerHeight="05dp"
+    android:background="#fffcf1"
+    android:smoothScrollbar="true"
+    android:layout_weight="9.75"
+    android:layout_x="1dp"
+    android:layout_y="260dp">
+</ListView>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/listicon"
+        android:layout_x="22dp"
+        android:layout_y="133dp"
+        android:id="@+id/imageView" />
+
+    <Button
+    android:text="@string/addGroceryItem"
+    android:layout_width="189dp"
+    android:layout_height="92dp"
+    android:layout_x="166dp"
+    android:layout_y="160dp"
+        android:id="@+id/addGroceryItemButton" />
+
+    <TextView
+        android:text="@string/groceryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="11dp"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="@string/groceryItemName"
+        android:layout_width="114dp"
+        android:layout_height="37dp"
+        android:layout_x="33dp"
+        android:layout_y="54dp"
+        android:id="@+id/textView2"
+        android:textColor="@color/black"
+        android:textSize="40px"/>
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_x="167dp"
+        android:layout_y="46dp"
+        android:id="@+id/groceryItemName"
+        android:inputType="text"
+        android:hint="Enter Here" />
+
+    <TextView
+        android:text="@string/numberOfItems"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:layout_x="31dp"
+        android:layout_y="97dp"
+        android:textSize="40px"
+        android:id="@+id/textView"
+        android:textColor="@color/black" />
+
+    <SeekBar
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_x="172dp"
+        android:layout_y="100dp"
+        android:id="@+id/itemsSeekBar"
+        android:max="20"
+        android:background="@color/blue" />
+
+    <EditText
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_x="171dp"
+        android:layout_y="121dp"
+        android:id="@+id/numberOfItems"
+        android:text="@string/here"
+        android:inputType="text" />
+
+</AbsoluteLayout>

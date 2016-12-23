@@ -12,4 +12,9 @@
     <string name="latitude">Latitude</string>
     <string name="here">here</string>
     <string name="launchCamera">Take Photo</string>
+    <string name="addGroceryItem">Add Grocery Item</string>
+    <string name="groceryItemName">Item Name</string>
+    <string name="groceryList">My Grocery List</string>
+    <string name="numberOfItems">No. of Items</string>
+
 </resources>
