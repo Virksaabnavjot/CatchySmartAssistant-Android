@@ -1,2 +1,12 @@
 # Catchy
-Mobile(Android) Application developed with Android Studio IDE using Java programming language: https://www.java.com/en/ and xml: https://www.w3.org/XML/
+Catch is a smart assistant application that helps users access multiple functionalities like, grocery lists, camera, location and make calls from a single application.
+
+Technologies & Tools Used:
+
+Android Studio
+
+Java
+
+SQLiteDatabase
+
+LocationManager, Toast
