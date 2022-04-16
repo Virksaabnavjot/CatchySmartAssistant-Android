@@ -10,3 +10,6 @@ Java
 SQLiteDatabase
 
 LocationManager, Toast
+
+
+Copyrights - Navjot Singh Virk (https://navjot.mrvirk.com & https://mrvirk.com)
